@@ -57,8 +57,7 @@ class ProdactName(Base):
         }
 
 
-engine = create_engine('sqlite:///brand.db?check_same_thread=False')
-
+create_engine('postgresql://catalog:password@localhost/catalog')
 
 Base.metadata.create_all(engine)
 
