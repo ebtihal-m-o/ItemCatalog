@@ -57,7 +57,7 @@ class ProdactName(Base):
         }
 
 
-create_engine('postgresql://catalog:password@localhost/catalog')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 
 Base.metadata.create_all(engine)
 
