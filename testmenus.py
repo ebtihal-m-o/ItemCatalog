@@ -4,7 +4,7 @@ from DB import Brand, Base, ProdactName, User
 
 # connect with DB
 
-engine = create_engine('sqlite:///brand.db?check_same_thread=False')
+create_engine('postgresql://catalog:password@localhost/catalog')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
